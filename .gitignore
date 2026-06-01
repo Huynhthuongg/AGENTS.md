@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+
+# Generated output
+generated/
+backup-*.tar.gz
+
+# Local configuration
+.env
