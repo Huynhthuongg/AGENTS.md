@@ -43,6 +43,7 @@ def create_app() -> FastAPI:
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Universal Project Compiler Agent</title>
+  <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
   <style>
     :root { color-scheme: light dark; --bg:#0b1020; --card:#11172b; --text:#eef2ff; --muted:#aab4d4; --accent:#7c3aed; }
     * { box-sizing: border-box; }
