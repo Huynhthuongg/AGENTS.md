@@ -10,6 +10,7 @@ INDEX_HTML = """
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Compile requirements into secure runnable project scaffolds." />
   <title>Universal Project Compiler Agent</title>
+  <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
   <style>
     :root {
       color-scheme: dark;
