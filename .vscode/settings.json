@@ -1,0 +1,6 @@
+{
+    "chat.useCustomizationsInParentRepositories": true,
+    "prettier.resolveGlobalModules": true,
+    "prettier.withNodeModules": true,
+    "chat.useClaudeHooks": true
+}
