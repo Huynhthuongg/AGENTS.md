@@ -62,9 +62,16 @@ tests/                         Unit tests
 
 ```bash
 python -m pip install -e '.[dev]'
-ruff check .
-pytest
+./scripts/check.sh
 ```
+
+`./scripts/check.sh` verifies development dependencies, then runs Ruff, Codespell, and the full pytest suite so release checks match CI.
+
+## Current release
+
+- Version: 0.1.1
+- Release date: 2026-06-02
+- Release focus: CLI dry-run previews, safe output directory validation, dashboard route alignment, and test workflow hardening.
 
 ## Security model
 

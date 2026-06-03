@@ -10,7 +10,6 @@ INDEX_HTML = """
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Compile requirements into secure runnable project scaffolds." />
   <title>Universal Project Compiler Agent</title>
-  <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
   <style>
     :root {
       color-scheme: dark;
@@ -148,8 +147,8 @@ Need auth, API, admin dashboard, dark mode, responsive UI, and deployment script
     }
   }
 
-  planButton.addEventListener('click', () => submit('/api/plan', planButton));
-  compileButton.addEventListener('click', () => submit('/api/compile', compileButton));
+  planButton.addEventListener('click', () => submit('/plan', planButton));
+  compileButton.addEventListener('click', () => submit('/compile', compileButton));
 </script>
 </body>
 </html>
