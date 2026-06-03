@@ -88,7 +88,7 @@ python -m pip install -e '.[dev]'
 ./scripts/check.sh
 ```
 
-`./scripts/check.sh` verifies development dependencies, then runs Ruff, Codespell, and the full pytest suite so release checks match CI. The Vercel landing page lives in `public/` and is served as a static site.
+`./scripts/check.sh` runs Ruff and the full pytest suite so release checks match CI. The Vercel landing page lives in `public/` and is served as a static site.
 
 ## Current release
 
