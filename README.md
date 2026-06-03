@@ -265,7 +265,7 @@ Thanks to all our contributors! Your contributions make this project better ever
 
 - 📄 [**Product Specification**](docs/SPECIFICATION.md)
 - 🏗️ [**Architecture Overview**](docs/ARCHITECTURE.md)
-- 📝 [**API Documentation**](docs/API.md)
+- 📝 [**API Examples**](#-api-examples)
 - 🔄 [**Changelog**](docs/CHANGELOG.md)
 
 ---
