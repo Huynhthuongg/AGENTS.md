@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Universal Project Compiler Agent turns requirements into secure runnable project scaffolds." />
+  <meta property="og:title" content="Universal Project Compiler Agent" />
+  <meta property="og:description" content="A Termux-first compiler agent with planning, safe scaffolds, tests, docs, and FastAPI automation." />
+  <meta property="og:type" content="website" />
+  <title>Universal Project Compiler Agent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="aurora aurora-one"></div>
+  <div class="aurora aurora-two"></div>
+  <header class="shell nav">
+    <a class="brand" href="#top" aria-label="Universal Project Compiler Agent home">
+      <span class="brand-mark">UP</span>
+      <span>Universal Project Compiler Agent</span>
+    </a>
+    <nav aria-label="Page sections">
+      <a href="#features">Features</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#deploy">Deploy</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="shell hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Android-first • Termux-ready • Secure by default</p>
+        <h1>Turn rough requirements into polished, runnable software scaffolds.</h1>
+        <p class="lede">Plan, compile, and ship maintainable Python/FastAPI projects with generated docs, tests, scripts, secret redaction, and low-resource workflows built for mobile developers.</p>
+        <div class="badge-row" aria-label="Project badges">
+          <img src="badges/termux.svg" alt="Termux ready" />
+          <img src="badges/fastapi.svg" alt="FastAPI powered" />
+          <img src="badges/vercel.svg" alt="Vercel ready" />
+        </div>
+        <div class="actions">
+          <a class="button primary" href="#features">Explore features</a>
+          <a class="button ghost" href="#deploy">Deploy on Vercel</a>
+        </div>
+      </div>
+      <aside class="terminal-card reveal" aria-label="Compilation preview">
+        <div class="terminal-bar"><span></span><span></span><span></span></div>
+        <pre><code>$ upca plan --text "# CRM Dashboard"
+✓ Priority plan generated
+✓ Security notes attached
+✓ Tests and scripts mapped
+
+$ upca compile --output-dir generated
+✓ README.md
+✓ docs/PLAN.md
+✓ tests/test_smoke.py
+✓ scripts/start.sh</code></pre>
+      </aside>
+    </section>
+
+    <section id="features" class="shell section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">What ships</p>
+        <h2>Professional scaffolds with safety rails.</h2>
+      </div>
+      <div class="grid cards">
+        <article class="card"><span>01</span><h3>Planning engine</h3><p>Converts natural language into Critical/High/Medium/Low implementation tasks with impact and file scope.</p></article>
+        <article class="card"><span>02</span><h3>Safe generation</h3><p>Normalizes slugs, rejects unsafe paths, escapes Markdown, and redacts common secrets before writing files.</p></article>
+        <article class="card"><span>03</span><h3>Dual interface</h3><p>Use the local CLI for Termux workflows or the FastAPI service for browsers, automation, and future dashboards.</p></article>
+      </div>
+    </section>
+
+    <section id="workflow" class="shell section split reveal">
+      <div>
+        <p class="eyebrow">Workflow</p>
+        <h2>From prompt to project in three steps.</h2>
+      </div>
+      <ol class="steps">
+        <li><strong>Describe</strong><span>Paste a README, spec, OCR text, or a plain-language product idea.</span></li>
+        <li><strong>Review</strong><span>Inspect prioritized work items, security notes, and inferred architecture.</span></li>
+        <li><strong>Compile</strong><span>Generate a runnable scaffold with docs, tests, scripts, and package metadata.</span></li>
+      </ol>
+    </section>
+
+    <section id="deploy" class="shell deploy reveal">
+      <div>
+        <p class="eyebrow">Vercel-ready</p>
+        <h2>Static landing page configuration is included.</h2>
+        <p>Deploy the polished GitHub introduction page with Vercel after connecting the repository or by running the Vercel CLI with your account token.</p>
+      </div>
+      <a class="button primary" href="https://vercel.com/new" rel="noopener">Open Vercel import</a>
+    </section>
+  </main>
+
+  <footer class="shell footer">AGPL-3.0-only • Built for focused, mobile-friendly software generation.</footer>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="166" height="34" role="img" aria-label="Vercel ready">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#06b6d4"><animate attributeName="stop-color" values="#06b6d4;#f8fafc;#06b6d4" dur="3.6s" repeatCount="indefinite"/></stop></linearGradient></defs>
+  <rect width="166" height="34" rx="17" fill="#0f172a"/><rect x="1" y="1" width="164" height="32" rx="16" fill="url(#g)" opacity=".25"/>
+  <text x="16" y="22" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="800">VERCEL READY</text><path d="M137 10l9 16h-18z" fill="#fff"><animateTransform attributeName="transform" type="translate" values="0 0;0 -2;0 0" dur="1.8s" repeatCount="indefinite"/></path>
+</svg>
