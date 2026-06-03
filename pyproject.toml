@@ -20,8 +20,9 @@ dependencies = [
 dev = [
   "pytest>=8.0,<9.0",
   "ruff>=0.6,<1.0",
-  "httpx>=0.27,<1.0",
-  "httpx2>=2.3,<3.0"
+  "httpx>=0.28,<1.0",
+  "httpx2>=2.3,<3.0",
+  "codespell>=2.3,<3.0"
 ]
 
 [project.scripts]
@@ -47,3 +48,7 @@ select = ["E", "F", "I", "B", "UP", "SIM"]
 [tool.ruff.lint.per-file-ignores]
 "app/universal_compiler_agent/server.py" = ["E501"]
 "app/universal_compiler_agent/templates.py" = ["E501"]
+
+[tool.codespell]
+skip = "*.png,.git,.pytest_cache,.ruff_cache,.venv"
+ignore-words-list = "thi"

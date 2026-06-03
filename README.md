@@ -1,5 +1,16 @@
 # Universal Project Compiler Agent
 
+<p align="center">
+  <img src="public/badges/termux.svg" alt="Termux ready" />
+  <img src="public/badges/fastapi.svg" alt="FastAPI powered" />
+  <img src="public/badges/vercel.svg" alt="Vercel ready" />
+</p>
+
+<p align="center">
+  <strong>Android-first compiler agent for turning requirements into secure, runnable project scaffolds.</strong><br />
+  <a href="public/index.html">Preview the landing page</a> · <a href="https://vercel.com/new">Deploy on Vercel</a>
+</p>
+
 Android-first, Termux-first development agent that transforms documents, specifications, repositories, OCR text, Markdown, or natural language requests into complete, runnable, maintainable software project scaffolds.
 
 The original product specification is preserved in [docs/SPECIFICATION.md](docs/SPECIFICATION.md).
@@ -58,6 +69,18 @@ tests/                         Unit tests
 .github/workflows/             CI checks
 ```
 
+
+## Vercel landing page
+
+A polished static introduction page is included in `public/` with animated SVG badges and Vercel routing/security headers in `vercel.json`.
+
+```bash
+npm i -g vercel
+vercel deploy --prod
+```
+
+If deploying from CI, provide your Vercel token as an environment secret and run `vercel deploy --prod --token "$VERCEL_TOKEN"`.
+
 ## Development
 
 ```bash
@@ -65,7 +88,7 @@ python -m pip install -e '.[dev]'
 ./scripts/check.sh
 ```
 
-`./scripts/check.sh` runs Ruff and the full pytest suite so release checks match CI.
+`./scripts/check.sh` verifies development dependencies, then runs Ruff, Codespell, and the full pytest suite so release checks match CI. The Vercel landing page lives in `public/` and is served as a static site.
 
 ## Current release
 

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="178" height="34" role="img" aria-label="FastAPI powered">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#06b6d4"><animate attributeName="offset" values="0;.35;0" dur="3s" repeatCount="indefinite"/></stop><stop offset="1" stop-color="#14b8a6"/></linearGradient></defs>
+  <rect width="178" height="34" rx="17" fill="#0f172a"/><rect x="1" y="1" width="176" height="32" rx="16" fill="url(#g)" opacity=".28"/>
+  <text x="16" y="22" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="800">FASTAPI POWERED</text><path d="M151 8l-10 11h8l-3 7 11-12h-8l2-6z" fill="#5eead4"><animate attributeName="opacity" values=".55;1;.55" dur="1.2s" repeatCount="indefinite"/></path>
+</svg>

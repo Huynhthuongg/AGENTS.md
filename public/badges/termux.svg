@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="172" height="34" role="img" aria-label="Termux ready">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#22c55e"><animate attributeName="stop-color" values="#22c55e;#06b6d4;#22c55e" dur="4s" repeatCount="indefinite"/></stop><stop offset="1" stop-color="#8b5cf6"><animate attributeName="stop-color" values="#8b5cf6;#22c55e;#8b5cf6" dur="4s" repeatCount="indefinite"/></stop></linearGradient></defs>
+  <rect width="172" height="34" rx="17" fill="#0f172a"/><rect x="1" y="1" width="170" height="32" rx="16" fill="url(#g)" opacity=".25"/>
+  <text x="16" y="22" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="800">TERMUX READY</text><circle cx="145" cy="17" r="5" fill="#22c55e"><animate attributeName="opacity" values="1;.35;1" dur="1.4s" repeatCount="indefinite"/></circle>
+</svg>
