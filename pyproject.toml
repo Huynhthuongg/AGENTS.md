@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "universal-project-compiler-agent"
-version = "0.1.0"
+version = "0.1.1"
 description = "Termux-first compiler agent that turns requirements into runnable project scaffolds."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -20,7 +20,8 @@ dependencies = [
 dev = [
   "pytest>=8.0,<9.0",
   "ruff>=0.6,<1.0",
-  "httpx>=0.27,<1.0"
+  "httpx>=0.27,<1.0",
+  "httpx2>=2.3,<3.0"
 ]
 
 [project.scripts]
@@ -45,3 +46,4 @@ select = ["E", "F", "I", "B", "UP", "SIM"]
 
 [tool.ruff.lint.per-file-ignores]
 "app/universal_compiler_agent/server.py" = ["E501"]
+"app/universal_compiler_agent/templates.py" = ["E501"]

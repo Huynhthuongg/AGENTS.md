@@ -1,6 +1,4 @@
-AGENTS.md
-
-Universal Project Compiler Agent
+# Universal Project Compiler Agent
 
 Android-First • Termux-First • Codex CLI • Claude Code
 
