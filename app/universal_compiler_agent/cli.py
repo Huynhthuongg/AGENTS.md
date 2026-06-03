@@ -19,6 +19,14 @@ def _read_input(args: argparse.Namespace) -> str:
     return "Universal Project Compiler Agent"
 
 
+def _safe_output_dir(value: str) -> Path:
+    output_dir = Path(value)
+    if output_dir.is_absolute() or ".." in output_dir.parts:
+        msg = "output_dir must be a safe relative path"
+        raise argparse.ArgumentTypeError(msg)
+    return output_dir
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Compile requirements into a runnable project scaffold."
@@ -37,7 +45,15 @@ def build_parser() -> argparse.ArgumentParser:
     compile_cmd.add_argument("--text", help="Inline requirements text.")
     compile_cmd.add_argument("--name", help="Override generated project name.")
     compile_cmd.add_argument(
-        "--output-dir", default="generated", help="Directory that will receive output."
+        "--dry-run",
+        action="store_true",
+        help="Print the generated plan as JSON without writing files.",
+    )
+    compile_cmd.add_argument(
+        "--output-dir",
+        default=Path("generated"),
+        type=_safe_output_dir,
+        help="Safe relative directory that will receive output.",
     )
     return parser
 
@@ -47,12 +63,12 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     requirements = _read_input(args)
 
-    if args.command == "plan":
+    if args.command == "plan" or args.dry_run:
         plan = build_plan(requirements, args.name)
         print(json.dumps(asdict(plan), indent=2))
         return 0
 
-    result = compile_project(requirements, Path(args.output_dir), args.name)
+    result = compile_project(requirements, args.output_dir, args.name)
     print(f"Generated {result.file_count} files in {result.root}")
     return 0
 

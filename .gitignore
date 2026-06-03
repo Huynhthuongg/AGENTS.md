@@ -12,3 +12,6 @@ backup-*.tar.gz
 
 # Local configuration
 .env
+
+# Generated release screenshots (avoid binary files in Codex diffs)
+docs/screenshots/*-release.png

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/index.py": {
+      "excludeFiles": "{tests/**,docs/**,scripts/**,generated/**,backup-*.tar.gz,.github/**,.pytest_cache/**,.ruff_cache/**}"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/index.py"
+    }
+  ],
+  "env": {
+    "UPCA_OUTPUT_BASE": "/tmp/upca"
+  }
+}
