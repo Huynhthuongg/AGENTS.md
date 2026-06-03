@@ -65,7 +65,7 @@ python -m pip install -e '.[dev]'
 ./scripts/check.sh
 ```
 
-`./scripts/check.sh` runs Ruff and the full pytest suite so release checks match CI.
+`./scripts/check.sh` verifies development dependencies, then runs Ruff, Codespell, and the full pytest suite so release checks match CI.
 
 ## Current release
 
