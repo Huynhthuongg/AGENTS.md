@@ -21,7 +21,6 @@ dev = [
   "pytest>=8.0,<9.0",
   "ruff>=0.6,<1.0",
   "httpx>=0.28,<1.0",
-  "httpx2>=2.3,<3.0",
   "codespell[toml]>=2.3,<3.0"
 ]
 
@@ -29,7 +28,7 @@ dev = [
 upca = "universal_compiler_agent.cli:main"
 
 [tool.setuptools]
-package-dir = {"" = "app"}
+package-dir = {"": "app"}
 
 [tool.setuptools.packages.find]
 where = ["app"]
