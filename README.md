@@ -91,6 +91,21 @@ cd AGENTS.md
 ```
 
 ---
+### ☁️ Vercel Deployment
+
+This repository includes a Vercel serverless entrypoint and routing config, so the FastAPI dashboard is served at `/` instead of returning `404: NOT_FOUND`.
+
+```bash
+# From the project root
+vercel
+```
+
+Vercel uses:
+- `vercel.json` to route every request to the Python serverless function.
+- `api/index.py` as the FastAPI entrypoint.
+- `requirements.txt` to install runtime dependencies.
+
+---
 
 ## 🔌 API Examples
 
