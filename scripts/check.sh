@@ -8,7 +8,7 @@ for command in ruff codespell; do
   fi
 done
 
-for module in pytest httpx2 httpx; do
+for module in pytest httpx; do
   if ! python -c "import ${module}" >/dev/null 2>&1; then
     missing="$missing $module"
   fi
