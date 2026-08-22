@@ -150,6 +150,7 @@ Need auth, API, admin dashboard, dark mode, responsive UI, and deployment script
   planButton.addEventListener('click', () => submit('/plan', planButton));
   compileButton.addEventListener('click', () => submit('/compile', compileButton));
 </script>
+<script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
 </body>
 </html>
 """
